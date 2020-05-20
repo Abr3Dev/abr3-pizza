@@ -1,33 +1,21 @@
 import React from 'react'
 import {FlatList} from 'react-native'
 import PropTypes from 'prop-types';
+import {StyleSheet} from 'react-native'
 
-import Card from './Card'
+import PizzaValues from './PizzaValues';
 
-//Responsável por correr o Array definido no App, e jogar prod CARD, para manipular os valores e jogar para o PIZZAVALUES,
-// para printar na tela. Nehnum valor é obrigatório. Podemos mudar depois
 
-//OBS: falta as imagens
 export default class ListPizza extends React.Component{
-    static propTypes = {
-        items : PropTypes.arrayOf(
-            PropTypes.shape({
-                namePizza : PropTypes.string,
-                value : PropTypes.string,
-                price : PropTypes.string,
-                description : PropTypes.string,
-            })
-        ).isRequired
-    }
 
-
-
-    renderItems = ({item : {namePizza, value, price, description} }) =>(
-        <Card 
+    renderItems = ({item : {id, namePizza, value, data, description, picture} }) =>(
+        <PizzaValues
+            picture ={picture}
             namePizza = {namePizza}
             value = {value}
-            price = {price}
             description = {description}
+            data = {data}
+           
         />
     )
     render(){
@@ -37,9 +25,16 @@ export default class ListPizza extends React.Component{
             <FlatList
             data ={items}
             renderItem={this.renderItems}
-           
+            keyExtractor={keyExtractor}
+            style={styles.scroll}
             />
         )
     }
+    
 }
-
+const styles = StyleSheet.create({
+    scroll :{
+        marginBottom : 48
+    }
+})
+const keyExtractor = ({id}) => id.toString();

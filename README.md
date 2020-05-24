@@ -1,15 +1,29 @@
--- __INTEGRANTES DO GRUPO__ --
+# NAC 02 Andrey Masiero
 
-ANDRÉ KANCELSKIS AZEVEDO DE OLIVEIRA RM: 83092
+Avaliação, app em react-native de uma pizzaria.
 
-GABRIEL ALVES PEREIRA RM: 82804
+## Seletor de Usuário 
 
-IVO ROBERTO DOS SANTOS SANTIAGO RM: 82487
+No arquivo - abr3-pizza/pizza/App.js <BR/>
+Usuário pode ser mudado até 5, modificando entre os integrantes do grupo.
 
-JOÃO PEDRO ALBUQUERQUE DOS SANTOS RM: 82680
+## Alunos Turma 2TDSJ 
 
-RAPHAEL MOLINA BEDRAN RM: 82352
+ANDRÉ KANCELSKIS AZEVEDO DE OLIVEIRA RM: 83092<BR/>
+GABRIEL ALVES PEREIRA RM: 82804<BR/>
+IVO ROBERTO DOS SANTOS SANTIAGO RM: 82487<BR/>
+JOÃO PEDRO ALBUQUERQUE DOS SANTOS RM: 82680<BR/>
+RAPHAEL MOLINA BEDRAN RM: 82352<BR/>
+RAPHAEL SANTANTONIO DE CAMARGO RM: 83088<BR/>
 
-RAPHAEL SANTANTONIO DE CAMARGO RM: 83088
+### Rodar  projeto
 
-![React Native](https://miro.medium.com/max/1024/1*xDi2csEAWxu95IEkaNdFUQ.png)
+```
+git clone https://github.com/Abr3Dev/abr3-pizza.git
+```
+
+
+
+```
+npm install
+```

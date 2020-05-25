@@ -1,12 +1,12 @@
 import React from 'react';
 import { FlatList } from 'react-native';
-import PizzaValues from './PizzaValues';
+import RenderPizzas from './RenderPizzas';
 
 
 export default class ListPizza extends React.Component {
 
     renderItems = ({ item: { namePizza, value, data, description, picture } }) => (
-        <PizzaValues
+        <RenderPizzas
             picture={picture}
             namePizza={namePizza}
             value={value}
@@ -22,8 +22,7 @@ export default class ListPizza extends React.Component {
                 renderItem={this.renderItems}
                 keyExtractor={keyExtractor}
             />
-
         )
     }
-}
+};
 const keyExtractor = ({ id }) => id.toString();

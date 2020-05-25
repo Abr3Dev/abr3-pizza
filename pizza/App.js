@@ -1,5 +1,4 @@
 import React from 'react';
-import { StyleSheet, View, Text, ScrollView } from 'react-native';
 import ListPizza from './components/ListPizza';
 import Header from './components/Header';
 import items from './data/data';
